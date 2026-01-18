@@ -1,8 +1,8 @@
 import { useState, useEffect } from 'react'
 import './App.css'
 
-const API_URL = 'https://spotify-tracker-admin-production.up.railway.app/api/client/chart/allTime'
-const API_KEY = 'stk_live_7f8a9c2e5b4d1f6a3e8c9b2d4f7a1e5c8b3d6f9a2e5c8b1d4f7a9e2c5b8d1f6a'
+const API_URL = import.meta.env.VITE_API_URL
+const API_KEY = import.meta.env.VITE_API_KEY
 
 function formatStreams(num) {
   if (num >= 1_000_000_000) {
