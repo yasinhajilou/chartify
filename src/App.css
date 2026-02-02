@@ -152,17 +152,14 @@
 
 /* Table Container */
 .table-container {
-  overflow-x: auto;
+  /* removed overflow-x: auto to allow sticky to work */
 }
 
 .songs-table {
   width: 100%;
-  border-collapse: collapse;
+  border-collapse: separate;
+  border-spacing: 0;
   table-layout: fixed;
-}
-
-.songs-table thead {
-  background-color: var(--bg-primary);
 }
 
 .songs-table thead th {
