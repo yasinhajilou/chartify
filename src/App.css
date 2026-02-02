@@ -162,6 +162,10 @@
 }
 
 .songs-table thead {
+  background-color: var(--bg-primary);
+}
+
+.songs-table thead th {
   position: sticky;
   top: 140px;
   background-color: var(--bg-primary);
@@ -340,7 +344,7 @@
     width: 50px;
   }
   
-  .songs-table thead {
+  .songs-table thead th {
     top: 180px;
   }
 }
